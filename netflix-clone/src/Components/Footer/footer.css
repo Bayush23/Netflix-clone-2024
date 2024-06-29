@@ -1,0 +1,59 @@
+/* Styles for the outer container of the footer */
+.footer-outer-container {
+	background-color: #111;
+	color: #757575;
+	padding: 20px 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* Styles for the inner container that holds the content */
+.footer-inner-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap; /* Added to handle responsiveness */
+	justify-content: space-between;
+	align-items: flex-start; /* Adjust alignment as needed */
+}
+
+/* Styles for the section containing social media icons */
+.footer-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/* Styles for the lists of data in the footer */
+.footer-data {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* Styles for individual sections of data in the footer */
+.footer-data > div {
+	flex: 0 1 25%; /* Adjust width as needed; 25% for 4 columns */
+	margin-bottom: 20px;
+}
+
+.footer-data ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-data li {
+	margin-bottom: 8px;
+}
+
+/* Styles for the service code section */
+.service-code {
+	margin-bottom: 20px;
+}
+
+/* Styles for the copyright notice */
+.copy-write {
+	color: #757575;
+	margin-top: 20px;
+}
