@@ -1,17 +1,17 @@
 import React from 'react'
 import "./header.css";
-// import from "../../Assets/Images/netflix.png";
-import SearchIcon from '@mui/icons-material/Search';
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+// import Image from "../../Assets/Images/netflix.png";
+// import SearchIcon from '@mui/icons-material/Search';
+// import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+// import AccountBoxIcon from "@mui/icons-material/AccountBox";
+// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = () => {
 	return (
 		<div>
 			<div className="header-outer-container">
 				<div className="header-left">
 					<ul>
-						{/* <li><img src=</li> */}
+						{/* <li><img src="../../Assets/Images/netflix.png" alt="Netflix" /></li> */}
 						<li>Netflix</li>
 						<li>Home</li>
                         <li>TV Shows</li>

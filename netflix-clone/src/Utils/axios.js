@@ -1,12 +1,5 @@
-import axios from "./axios";
-
-function axios() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default axios
-
+import axios from "axios";
+const instance =axios.create({
+  baseURL:"https://api.themoviedb.org/3/",
+});
+export default instance;

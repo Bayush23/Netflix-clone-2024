@@ -1,7 +1,7 @@
 import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
 import "./footer.css";
 
 const Footer = () => {
@@ -9,9 +9,9 @@ const Footer = () => {
 		<footer className="footer-outer-container">
 			<div className="footer-inner-container">
 				<div className="footer-icons">
-					<FacebookIcon />
-					<InstagramIcon />
-					<YouTubeIcon />
+					{/* <FacebookIcon /> */}
+					{/* <InstagramIcon /> */}
+					{/* <YouTubeIcon /> */}
 				</div>
 				<div className="footer-data">
 					<div>
