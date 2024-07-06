@@ -2,17 +2,18 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Banner from "../../Components/Banner/banner";
-// import Rowlist from "../../Components/Rows/Row";
+import RowList from "../../Components/Rows/Rowlist/Rowlist";
 
-const Home = () => {
+
+function Home() {
 	return (
 		<div>
 			<Header />
 			<Banner />
-			{/* <Rowlist /> */}
+			<RowList />
 			<Footer />
 		</div>
 	);
-};
+}
 
 export default Home;

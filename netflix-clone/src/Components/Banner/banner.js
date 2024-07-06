@@ -1,39 +1,38 @@
-import React, { useState, useEffect } from "react";
-// import axios from "../../Utils/axios";
+import React, { useEffect, useState } from "react";
+import axios from "../../Utils/axios";
+import requests from "../../Utils/requests"
 import "./banner.css";
 
 const Banner = () => {
 	const [movie, setMovie] = useState({});
-
 	useEffect(() => {
-		const fetchBannerData = async () => {
+		(async () => {
 			try {
-				
-				// const response = await axios.get("/request.FetchNetflixoriginals");
-				const randomMovie =
-					response.data.results[
-						Math.floor(Math.random() * response.data.results.length)
-					];
-				setMovie(randomMovie);
+				const request = await axios.get(requests.fetchNetflixOriginals);
+				// console.log(request);
+				setMovie(
+					request.data.results[
+						Math.floor(Math.random() * request.data.results.length)
+					]
+				);
 			} catch (error) {
-				console.error("Error fetching banner data:", error);
+				console.log("error", error);
 			}
-		};
-
-		fetchBannerData();
+		})();
 	}, []);
 
-	const truncate = (str, n) => {
+	function truncate(str, n) {
 		return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-	};
+	}
 
 	return (
-		<header
+		<div
 			className="banner"
 			style={{
-				backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
 				backgroundSize: "cover",
+				backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
 				backgroundPosition: "center",
+				backgroundRepeat: "no-repeat",
 			}}
 		>
 			<div className="banner__contents">
@@ -41,15 +40,15 @@ const Banner = () => {
 					{movie?.title || movie?.name || movie?.original_name}
 				</h1>
 				<div className="banner__buttons">
-					<button className="banner__button">Play</button>
+					<button className="banner__button play">Play</button>
 					<button className="banner__button">My List</button>
 				</div>
 				<h1 className="banner__description">
 					{truncate(movie?.overview, 150)}
 				</h1>
 			</div>
-			<div className="banner--fadeBottom" />
-		</header>
+			<div className="banner__fadeBottom" />
+		</div>
 	);
 };
 

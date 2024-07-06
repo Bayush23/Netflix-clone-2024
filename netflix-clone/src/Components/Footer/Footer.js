@@ -1,24 +1,26 @@
 import React from "react";
-// import FacebookIcon from "@mui/icons-material/Facebook";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
 import "./footer.css";
 
 const Footer = () => {
 	return (
-		<footer className="footer-outer-container">
-			<div className="footer-inner-container">
-				<div className="footer-icons">
-					{/* <FacebookIcon /> */}
-					{/* <InstagramIcon /> */}
-					{/* <YouTubeIcon /> */}
+		<div className="footer_outer_container">
+			<div className="footer_inner_container">
+				<div className="footer_icons">
+					<FacebookOutlinedIcon />
+					<InstagramIcon />
+					<YouTubeIcon />
 				</div>
-				<div className="footer-data">
+
+				<div className="footer_data">
 					<div>
 						<ul>
 							<li>Audio Description</li>
-							<li>Investor Relations</li>
-							<li>Legal Notice</li>
+							<li> Invester Relations</li>
+							<li> Legal Notices</li>
 						</ul>
 					</div>
 					<div>
@@ -30,9 +32,9 @@ const Footer = () => {
 					</div>
 					<div>
 						<ul>
-							<li>Gift Cards</li>
-							<li>Terms of Use</li>
-							<li>Corporate Information</li>
+							<li>Gift cards</li>
+							<li> Terms of Use</li>
+							<li> Corporate Information</li>
 						</ul>
 					</div>
 					<div>
@@ -43,12 +45,13 @@ const Footer = () => {
 						</ul>
 					</div>
 				</div>
-				<div className="service-code">
+
+				<div className="service_code">
 					<p>Service Code</p>
 				</div>
-				<div className="copy-write">&copy; 1997-2024 Netflix, Inc.</div>
+				<div className="copy-write"> &copy; 1997- 2024 Netflix, Inc</div>
 			</div>
-		</footer>
+		</div>
 	);
 };
 
